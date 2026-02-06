@@ -1,9 +1,9 @@
 
-name: 'customer_subscription_project'
+name: 'CUSTOMER_SUBSCRIPTION_PROJECT'
 version: '1.0.0'
 config-version: 2
 
-profile: 'customer_subscription_project'
+profile: 'CUSTOMER_SUBSCRIPTION_PROJECT'
 
 model-paths: ["models"]
 analysis-paths: ["analysis"]
@@ -17,5 +17,5 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  customer_subscription_project:
+CUSTOMER_SUBSCRIPTION_PROJECT:
     +materialized: view
