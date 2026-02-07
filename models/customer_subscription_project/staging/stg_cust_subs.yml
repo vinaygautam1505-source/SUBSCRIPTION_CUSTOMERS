@@ -1,0 +1,22 @@
+ersion: 2
+
+models: 
+  - name: stg_cust_subs
+    description: "cleaned staging view"
+
+    columns: 
+      - name: customer_id
+        description: "unique customer identifier"
+        tests:
+          - not_null
+          - unique
+
+      - name: phone_1
+        description: "customer contact"
+        tests:
+          - not_null
+
+      - name: email
+        description: "customer email address"
+        tests:
+          - not_null
