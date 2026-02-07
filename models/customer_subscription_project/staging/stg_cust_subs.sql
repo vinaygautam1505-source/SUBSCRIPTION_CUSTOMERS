@@ -16,7 +16,7 @@ with cleaned_and_renamed as (
         trim(coalesce("CUSTOMER ID", '00') )             as customer_id,
         try_to_date(trim("SUBSCRIPTION DATE"), 'YYYY-MM-DD') as subscription_date
 
-    FROM {{ source('customer_subscription', 'sheet1') }}
+    FROM {{ source('customer_subscription', 'SHEET1') }}
 )
 SELECT *
 FROM cleaned_and_renamed
