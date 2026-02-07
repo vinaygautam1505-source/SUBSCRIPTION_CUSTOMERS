@@ -1,5 +1,5 @@
 WITH SOURCE AS(
-  SELECT * FROM {{source('customer_subscription_project', 'SHEET1')}} ),
+  SELECT * FROM {{source('customer_subscription', 'SHEET1')}} ),
 
   
 RENAMED AS ( 
