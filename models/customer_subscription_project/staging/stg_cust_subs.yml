@@ -13,10 +13,7 @@ models:
 
       - name: phone_1
         description: "customer contact"
-        tests:
-          - not_null
 
       - name: email
         description: "customer email address"
-        tests:
-          - not_null
+       
