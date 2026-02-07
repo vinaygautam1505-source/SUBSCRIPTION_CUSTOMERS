@@ -22,4 +22,4 @@ SELECT *
 FROM cleaned_and_renamed
 
 
-select * from renamed
+
