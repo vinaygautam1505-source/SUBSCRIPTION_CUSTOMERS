@@ -2,7 +2,7 @@ select
   customer_id,
   first_name,
   last_name,
-  concate(first_name, ' ', last_name) as full_name,
+  concat(first_name, ' ', last_name) as full_name,
   company,
   city,
   country,
