@@ -14,8 +14,9 @@ target-path: "target"
 clean-targets:
   - "target"
   - "dbt_packages"
-
+  
 models:
-  customer_subscription_project:
-    +schema: output_dbt
-    +materialized: view
+  project_cust_subs:  
+    staging:
+      customer_subscription_project:
+        +materialized: view
