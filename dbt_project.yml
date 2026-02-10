@@ -16,7 +16,6 @@ clean-targets:
   - "dbt_packages"
   
 models:
-  project_cust_subs:          
-    customer_subscription_project:
-      staging:
-        +materialized: view
+  project_cust_subs:
+    staging:
+      +materialized: view
