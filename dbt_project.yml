@@ -17,5 +17,5 @@ clean-targets:
 
 models:
   customer_subscription_project:
-    +schema: public
+    +schema: output_dbt
     +materialized: view
