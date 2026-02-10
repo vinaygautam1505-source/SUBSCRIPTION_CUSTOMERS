@@ -1,1 +1,10 @@
 
+
+version: 2
+
+sources:
+  - name: customer_subscription
+    database: CUSTOMER_SUBSCRIPTION
+    schema: INPUT_AIRBYTE
+    tables:
+      - name: SHEET1
