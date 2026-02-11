@@ -10,11 +10,6 @@ models:
         tests:
           - not_null
 
-      - name: subscription_date
-        description: "Date of the subscription"
-        tests:
-          - not_null
-
       - name: subscription_event
         description: "Each row represents one subscription (1 = one subscription)"
         tests:
