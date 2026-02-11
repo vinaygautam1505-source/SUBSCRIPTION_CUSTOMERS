@@ -1,1 +1,21 @@
 
+version: 2
+
+models:
+  - name: fact_cust_subs
+    description: "Fact table for Customer Subscriptions"
+    columns:
+      - name: customer_id
+        description: "Foreign key to dim_cust_subs table (Customer ID)"
+        tests:
+          - not_null
+
+      - name: subscription_date
+        description: "Date of the subscription"
+        tests:
+          - not_null
+
+      - name: subscription_event
+        description: "Each row represents one subscription (1 = one subscription)"
+        tests:
+          - not_null
