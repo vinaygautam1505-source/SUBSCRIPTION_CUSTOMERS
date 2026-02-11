@@ -1,1 +1,47 @@
 
+version: 2
+
+models:
+  - name: dim_cust_subs
+    description: "Dimension table for Customer Subscription details"
+    columns:
+      - name: customer_id
+        description: "Unique identifier for the customer"
+        tests:
+          - unique
+          - not_null
+
+      - name: first_name
+        description: "Customer's first name"
+
+      - name: last_name
+        description: "Customer's last name"
+
+      - name: company
+        description: "Company name associated with the customer"
+
+      - name: city
+        description: "City of the customer"
+
+      - name: country
+        description: "Country of the customer"
+
+      - name: phone_1
+        description: "Primary phone number of the customer"
+
+      - name: phone_2
+        description: "Secondary phone number of the customer"
+
+      - name: email
+        description: "Email address of the customer"
+        tests:
+          - unique
+          - not_null
+
+      - name: website
+        description: "Customer's website"
+
+      - name: subscription_date
+        description: "Date when the customer subscribed"
+        tests:
+          - not_null
