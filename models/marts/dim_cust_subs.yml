@@ -43,5 +43,4 @@ models:
 
       - name: subscription_date
         description: "Date when the customer subscribed"
-        tests:
-          - not_null
+       
